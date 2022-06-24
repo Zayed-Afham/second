@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>table</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<style type="text/css">
+
+body {
+background-image: linear-gradient(to bottom right,#FEAC5E,#C779D0,#fdfc47);
+background-repeat:no-repeat;
+
+background-size:100vh 100vh;
+
+}
+
+input{
+display:block;
+margin:auto;
+margin-top:20px;
+padding:6px;
+border-radius:10px;
+font-size:20px;
+border:solid 1px ;
+}
+
+
+button {
+
+display:block;
+margin:auto;
+margin-top:5px;
+padding:6px;
+font-size:16px;
+border: 0px ;
+border-radius:10px;
+background-color:#00C0FF;
+color:white;
+}
+
+h3  {
+
+margin:0 0 0 95px;
+margin-top:240px;
+
+}
+
+</style>
+</head>
+<body>
+<h3>Multiplication Table</h3>
+<input id="ip" type="number"max="4" class="f" placeholder="ex:2" />
+<button onclick="btn()" class="f" >Find table</button>
+<div id="cont"></div>
+
+<script>
+let ber;
+function btn(){
+let n=document.getElementById("ip").value
+ber = 12
+console.log(ber)
+if(n==""){n=0
+}
+return table(n)
+
+      
+}
+
+////////this is also right//////////
+/*var e=prompt("Write number to find its table")
+while(e==""){
+e=prompt("Write number to find its table")
+}*/
+
+
+
+
+function table(num){
+
+
+//document.write(`<h1>Lorem ipsum dolor ${num}sit amet.</h1</`)
+
+
+;e=document.write(`<h1
+ style="display:flex;margin-top:70px;text-align:center;background-image: linear-gradient(to bottom right, #ffdde1,#12fff7);
+
+
+">
+
+Multiplication table of ${num} is :
+
+</h1>`);
+
+for(i=1;i<=10;i++){
+document.write(`<h3 style="display:flex;justify-content:center;margin-bottom:-35px;">
+${num} X ${i} = ${num*i}
+</h3>`);
+document.write("<br>");
+}
+ber = 20
+console.log(ber)
+//mul.style.backgroundColor="pink";
+}
+//w=document.getElementById("i");
+
+   
+
+</script>
+</body>
+</html>
